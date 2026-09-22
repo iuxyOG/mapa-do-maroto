@@ -1,202 +1,267 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mapa do Maroto - Jhullya Isabela</title>
-  <meta name="description" content="Experiência fan-made do Mapa do Maroto para Jhullya Isabela: magia, ciência e descobertas. Quiz de casa, varinha e patrono, mapa interativo e missões." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="theme-color" content="#0a1020" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="apple-touch-icon" href="favicon.svg" />
-  <link rel="apple-touch-icon" sizes="192x192" href="assets/icon.png" />
-  <link rel="apple-touch-icon" sizes="512x512" href="assets/icon.png" />
-  <link rel="manifest" href="manifest.json" />
-  <!-- Open Graph para compartilhar no WhatsApp, redes sociais -->
-  <meta property="og:title" content="Mapa do Maroto - Jhullya Isabela" />
-  <meta property="og:description" content="Um mapa tecido por ciência, estrelas e segredos. Descubra sua casa, varinha e patrono." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/og-image.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="assets/og-image.png" />
-  <meta name="twitter:title" content="Mapa do Maroto - Jhullya Isabela" />
-  <meta name="twitter:description" content="Um mapa tecido por ciência, estrelas e segredos. Feito para você." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Feliz 19 anos, Jhullya ♥ · Mapa do Maroto</title>
+  <meta name="description" content="Um Mapa do Maroto cor-de-rosa, feito com amor para os 19 anos da Jhullya Isabela.">
+  <meta name="theme-color" content="#ff5c9a">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+
+  <meta property="og:title" content="Feliz 19 anos, Jhullya ♥">
+  <meta property="og:description" content="Juro solenemente que estou apaixonado por você. Abre o mapa.">
+  <meta property="og:image" content="https://iuxyog.github.io/mapa-do-maroto/assets/og.jpg">
+  <meta property="og:url" content="https://iuxyog.github.io/mapa-do-maroto/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>.gate{display:none}.site{clip-path:none}[data-reveal]{opacity:1;transform:none}</style></noscript>
 </head>
-<body>
-  <a href="#main" class="skip-link">Pular para o conteúdo</a>
-  <div id="loader" class="loader" aria-live="polite" aria-label="Carregando">
-    <div class="loader-bg"></div>
-    <div class="loader-content">
-      <div class="loader-mark"></div>
-      <h1 class="loader-title">Mapa do Maroto</h1>
-      <p class="loader-name">Jhullya Isabela</p>
-      <p class="loader-message">Preparando algo especial para você...</p>
-      <div class="loader-bar"><span class="loader-progress"></span></div>
-      <p class="loader-heart">♥</p>
+<body class="locked">
+
+  <!-- ─── O mapa fechado ─────────────────────────────────────────── -->
+  <section id="gate" class="gate" aria-label="Abrir o mapa">
+    <div class="gate-paper paper">
+      <p class="gate-kicker">Mapa do Maroto · edição 19 anos</p>
+      <h1 class="gate-title">Jhullya <span>Isabela</span></h1>
+      <p class="gate-sub">
+        O senhor Iury, provedor de auxílio a namoradas que amam rosa,
+        tem o orgulho de apresentar um mapa que só abre pra você.
+      </p>
+      <button id="gate-btn" class="btn btn-gate" type="button">
+        <span class="btn-line">Juro solenemente que</span>
+        <span class="btn-strong">estou apaixonado por você</span>
+      </button>
+      <p class="gate-hint">toca pra abrir · liga o som ♪</p>
     </div>
-  </div>
-  <div id="app" class="app">
-    <header class="topbar">
-      <div class="brand">
-        <span class="brand-mark"></span>
-        <div>
-          <div class="brand-title">Mapa do Maroto</div>
-          <div class="brand-sub">Jhullya Isabela · Um mapa só seu</div>
-        </div>
+  </section>
+
+  <!-- ─── O mapa aberto ──────────────────────────────────────────── -->
+  <div id="site" class="site">
+
+    <header class="hero" data-reveal-group="90">
+      <div class="hearts" aria-hidden="true">
+        <span style="--x:6%;--s:14px;--d:16s;--delay:-3s"></span>
+        <span style="--x:18%;--s:10px;--d:21s;--delay:-11s"></span>
+        <span style="--x:31%;--s:18px;--d:18s;--delay:-6s"></span>
+        <span style="--x:47%;--s:9px;--d:24s;--delay:-15s"></span>
+        <span style="--x:58%;--s:16px;--d:17s;--delay:-1s"></span>
+        <span style="--x:69%;--s:11px;--d:22s;--delay:-9s"></span>
+        <span style="--x:80%;--s:20px;--d:19s;--delay:-13s"></span>
+        <span style="--x:91%;--s:12px;--d:23s;--delay:-5s"></span>
       </div>
-      <div class="topbar-actions">
-        <button id="btn-sound" class="ghost" aria-pressed="false" aria-label="Ativar sons">Som</button>
-        <button id="btn-mode" class="ghost" aria-pressed="false" aria-label="Alternar modo noite">Modo Lua</button>
-        <button id="btn-centralize" class="ghost" aria-label="Centralizar mapa">Centralizar</button>
-      </div>
+      <p class="kicker" data-reveal>Mapa do Maroto · edição 19 anos</p>
+      <h1 class="hero-title" data-reveal>Feliz <em>19</em> anos,<br>meu amor</h1>
+      <p class="hero-name" data-reveal>Jhullya Isabela</p>
+      <p class="hero-date" data-reveal><span>21 de setembro</span></p>
+      <a class="hero-scroll" href="#musica" data-reveal>desce que tem mais ↓</a>
     </header>
 
-    <main id="main" class="stage" tabindex="-1">
-      <section id="screen-intro" class="screen active" aria-hidden="false">
-        <div class="intro-wrap">
-          <div class="envelope" id="envelope" tabindex="0" role="button" aria-label="Abrir carta">
-            <div class="envelope-back"></div>
-            <div class="envelope-front"></div>
-            <div class="seal" aria-hidden="true"></div>
-            <div class="letter" aria-hidden="true">
-              <h1>Convite do Mapa</h1>
-              <p>Há um caminho tecido por ciência, estrelas e segredos — e foi feito pensando em você.</p>
-              <p>Hoje, este mapa decide confiar sua tinta só a você. Cada linha que aparecer será um passo nosso.</p>
-              <p>Seja curiosa, seja gentil, e deixe a magia responder. <span class="letter-heart">♥</span></p>
-              <div class="intro-cta">
-                <button id="btn-start" class="primary">Começar descobertas</button>
-                <button id="btn-skip" class="ghost">Ir direto ao mapa</button>
-              </div>
-            </div>
+    <!-- música -->
+    <section id="musica" class="section music">
+      <div class="wrap" data-reveal-group="70">
+        <p class="label" data-reveal>♪ a sua música</p>
+        <h2 data-reveal>teenage dream</h2>
+        <p class="muted" data-reveal>Olivia Rodrigo · aperta o play e continua lendo com ela tocando.</p>
+        <div class="player" data-reveal>
+          <div class="player-frame" id="player-frame">
+            <button class="player-fallback" id="player-fallback" type="button">▶ tocar a música</button>
           </div>
+          <p class="player-note" id="player-note">não tocou? <button class="link" id="player-spotify" type="button">ouve pelo Spotify</button></p>
         </div>
-      </section>
-
-      <section id="screen-quiz" class="screen" aria-hidden="true">
-        <div class="quiz-wrap">
-          <div class="quiz-header">
-            <div class="quiz-step" id="quiz-step">Parte 1 de 3</div>
-            <div class="quiz-title" id="quiz-title">Casa</div>
-          </div>
-          <div class="quiz-card" id="quiz-card">
-            <div class="quiz-question" id="quiz-question">Pergunta</div>
-            <div class="quiz-answers" id="quiz-answers"></div>
-          </div>
-          <div class="quiz-footer">
-            <button id="quiz-prev" class="ghost">Voltar</button>
-            <button id="quiz-next" class="primary">Continuar</button>
-          </div>
-        </div>
-      </section>
-
-      <section id="screen-results" class="screen" aria-hidden="true">
-        <div class="results-wrap">
-          <h2>Seu mapa respondeu</h2>
-          <p class="results-romantic">O mapa escolheu para você — com carinho.</p>
-          <div class="results-grid">
-            <div class="result-panel result-panel-wand">
-              <h3>Varinha</h3>
-              <div class="wand-image" role="img" aria-hidden="true"></div>
-              <svg id="wand-svg" viewBox="0 0 400 120" role="img" aria-label="Varinha desenhada">
-                <defs>
-                  <filter id="wand-glow" x="-50%" y="-50%" width="200%" height="200%">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
-                    <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-                  </filter>
-                  <filter id="spark-glow" x="-100%" y="-100%" width="300%" height="300%">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
-                    <feMerge><feMergeNode in="blur" /><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-                  </filter>
-                </defs>
-                <path id="wand-path" d="M20 90 C120 60 260 20 380 30" filter="url(#wand-glow)" />
-                <circle id="wand-spark" cx="20" cy="90" r="6" filter="url(#spark-glow)" />
-              </svg>
-              <div id="wand-text"></div>
-            </div>
-            <div class="result-panel result-panel-patronus">
-              <h3>Patrono</h3>
-              <div class="patronus-canvas-wrap">
-                <canvas id="patronus-canvas" width="420" height="240" aria-label="Constelação do patrono"></canvas>
-              </div>
-              <div id="patronus-text"></div>
-            </div>
-          </div>
-          <div class="results-actions">
-            <button id="btn-to-map" class="primary btn-to-map">Ir ao mapa</button>
-          </div>
-        </div>
-      </section>
-
-      <section id="screen-map" class="screen" aria-hidden="true">
-        <div class="map-wrap">
-          <div class="map-frame">
-          <div id="map-container" class="map-container" aria-label="Mapa do Maroto" role="application">
-            <canvas id="map-texture"></canvas>
-            <div id="map-ink-reveal" class="map-ink-reveal" aria-hidden="true"></div>
-            <div id="map-viewport" class="map-viewport">
-              <svg id="map-svg" viewBox="0 0 2000 1000" preserveAspectRatio="xMidYMid meet" aria-hidden="true"></svg>
-              <div id="map-pins" class="map-pins" aria-hidden="true"></div>
-              <canvas id="footprint-canvas" width="2000" height="1000" aria-hidden="true"></canvas>
-            </div>
-            <canvas id="lighting-canvas" aria-hidden="true"></canvas>
-          </div>
-          </div>
-          <div class="map-hud">
-            <div class="hud-item">Explorado: <span id="hud-progress">0%</span></div>
-            <div class="hud-item">Selos: <span id="hud-stamps">0</span></div>
-            <div class="hud-item">Zoom: <span id="hud-zoom">100%</span></div>
-            <button id="btn-outro" class="ghost hud-button" aria-label="Ir ao encerramento" hidden>Encerramento</button>
-          </div>
-          <div class="map-compass" aria-hidden="true">
-            <div class="compass-needle"></div>
-          </div>
-          <div class="map-minimap" aria-label="Minimapa">
-            <canvas id="minimap-canvas" width="220" height="120"></canvas>
-            <div id="minimap-viewport" class="minimap-viewport"></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="screen-outro" class="screen" aria-hidden="true">
-        <div class="outro-wrap">
-          <h2>Juro solenemente que...</h2>
-          <p>...cada passo deixou um rastro de carinho. Que o mapa continue abrindo portas, agora e sempre.</p>
-          <p class="outro-romantic">Que cada estrela neste mapa lembre que você é especial. Obrigado por percorrer cada caminho comigo.</p>
-          <p class="outro-dedication">Para Jhullya Isabela, com todo carinho.<br />21 de setembro.</p>
-          <button id="btn-restart" class="ghost">Rever experiência</button>
-        </div>
-      </section>
-    </main>
-
-    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
-      <div class="modal-backdrop" data-close="true"></div>
-      <div class="modal-card" role="document">
-        <button class="modal-close" data-close="true" aria-label="Fechar">×</button>
-        <div id="modal-content"></div>
       </div>
-    </div>
+    </section>
 
-    <div id="toast" class="toast" aria-live="polite"></div>
+    <!-- carta -->
+    <section id="carta" class="section letter-section">
+      <div class="wrap">
+        <p class="label" data-reveal>uma carta pra você</p>
+        <article class="letter" data-reveal>
+          <p class="salute">Jhullya, meu amor,</p>
+          <p>Hoje você faz 19 anos. E eu, que passo o dia inteiro pensando em você, esqueci de te mandar o textinho de aniversário. Me desculpa. Não foi falta de amor — foi excesso de nervoso pra fazer isso aqui ficar do jeito que você merece. (E sim, eu sei que essa desculpa é meio ruim. Mas o site ficou bonito, vai.)</p>
+          <p>Então deixa eu falar agora, do jeito certo:</p>
+          <p class="big">Feliz aniversário, amor da minha vida.</p>
+          <p>Eu queria que hoje você acordasse sabendo o quanto é amada. Que você fique bem — de verdade, por dentro — e que todo dia desse seu novo ano tenha pelo menos um motivo pra você rir daquele jeito que faz o corpo inteiro rir junto.</p>
+          <p>Você ama a <em>teenage dream</em>, e eu sei o que ela diz: que ela tem medo de o melhor já ter passado, de que aos 19 as coisas talvez não melhorem. Eu queria te responder por ela: <strong>o nosso melhor ainda nem começou.</strong> Eu quero viver muitos anos com você. Quero envelhecer do seu lado. Quero que a gente viva junto pra sempre — e, se "pra sempre" existir mesmo, eu quero o meu com você.</p>
+          <p>E eu te prometo uma coisa: as brigas, as discussões por bobeira, aquele silêncio ruim… isso não vai mais acontecer. Eu vou ouvir mais, vou falar com calma, vou escolher você antes de escolher ter razão. Porque nada, nada, vale mais do que ter você bem e do meu lado.</p>
+          <p>Você é a pessoa mais linda, mais engraçada e mais incrível que eu conheço. Obrigado por existir. Obrigado por me escolher todo dia.</p>
+          <p class="big">Feliz 19 anos, meu amor. Te amo mais do que esse site consegue mostrar.</p>
+          <p class="sign">Com todo o meu amor,<br>Iury ♥</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- mapa -->
+    <section id="mapa" class="section map-section">
+      <div class="wrap map-intro" data-reveal-group="70">
+        <p class="label" data-reveal>o mapa</p>
+        <h2 data-reveal>Por onde a gente já andou</h2>
+        <p class="muted" data-reveal>Segue as pegadas e toca em cada lugar. Cada um guarda uma foto nossa.</p>
+      </div>
+
+      <div class="map-scroll">
+        <div id="map" class="map paper" data-reveal data-reveal-group="path">
+          <svg viewBox="0 0 1000 700" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <defs>
+              <mask id="trail-mask">
+                <path class="draw" d="M160,175 C240,140 320,190 390,160 C460,130 530,215 595,185 C660,155 740,120 825,150 C965,150 915,275 820,320 C775,380 690,360 605,400 C540,430 470,430 395,470" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" pathLength="1"/>
+              </mask>
+            </defs>
+
+            <rect class="border-a" x="14" y="14" width="972" height="672" rx="16"/>
+            <rect class="border-b" x="24" y="24" width="952" height="652" rx="12"/>
+
+            <text class="t-title" x="500" y="54" text-anchor="middle">Mapa do Maroto</text>
+            <text class="t-sub" x="500" y="78" text-anchor="middle">edição 19 anos · Jhullya Isabela</text>
+
+            <g class="rooms">
+              <g transform="rotate(-1.5 160 165)"><rect x="50" y="100" width="220" height="130" rx="14"/><text x="160" y="214" text-anchor="middle">Sala Comunal do Sofá</text></g>
+              <g transform="rotate(1 390 152)"><rect x="300" y="95" width="180" height="115" rx="14"/><text x="390" y="194" text-anchor="middle">Jardim das Risadas</text></g>
+              <g transform="rotate(-1 595 195)"><rect x="520" y="110" width="150" height="170" rx="14"/><text x="595" y="264" text-anchor="middle">Torre do Coração</text></g>
+              <g transform="rotate(1.2 825 147)"><rect x="700" y="95" width="250" height="105" rx="14"/><text x="825" y="184" text-anchor="middle">Corredor de Limeira</text></g>
+              <g transform="rotate(-1.2 820 320)"><rect x="720" y="250" width="200" height="140" rx="14"/><text x="820" y="374" text-anchor="middle">Salão dos Sorrisos</text></g>
+              <g transform="rotate(1.5 605 390)"><rect x="520" y="330" width="170" height="120" rx="14"/><text x="605" y="434" text-anchor="middle">Muro do Mario</text></g>
+              <g transform="rotate(-1 395 465)"><rect x="300" y="400" width="190" height="130" rx="14"/><text x="395" y="514" text-anchor="middle">Nosso Cantinho</text></g>
+
+              <g class="room-extra" transform="rotate(1 155 335)"><rect x="50" y="280" width="210" height="110" rx="14"/><text x="155" y="330" text-anchor="middle">Biblioteca dos</text><text x="155" y="360" text-anchor="middle">Textinhos Atrasados</text></g>
+              <g class="room-extra" transform="rotate(-1.4 160 485)"><rect x="50" y="430" width="220" height="110" rx="14"/><text x="160" y="480" text-anchor="middle">Cozinha dos Lanches</text><text x="160" y="510" text-anchor="middle">da Madrugada</text></g>
+              <g class="room-extra" transform="rotate(1.3 400 607)"><rect x="300" y="560" width="200" height="95" rx="14"/><text x="400" y="600" text-anchor="middle">Sala Precisa</text><text x="400" y="628" text-anchor="middle" class="small">(sempre que a gente precisa)</text></g>
+              <g class="room-extra" transform="rotate(-1 655 545)"><rect x="560" y="490" width="190" height="110" rx="14"/><text x="655" y="540" text-anchor="middle">Estufa das</text><text x="655" y="570" text-anchor="middle">Flores Rosas</text></g>
+            </g>
+
+            <path class="trail" d="M160,175 C240,140 320,190 390,160 C460,130 530,215 595,185 C660,155 740,120 825,150 C965,150 915,275 820,320 C775,380 690,360 605,400 C540,430 470,430 395,470" mask="url(#trail-mask)"/>
+
+            <g class="compass" transform="translate(905 605)">
+              <circle r="54"/>
+              <circle r="42" class="inner"/>
+              <polygon points="0,-40 7,-6 0,0 -7,-6" class="n"/>
+              <polygon points="0,40 7,6 0,0 -7,6"/>
+              <polygon points="40,0 6,7 0,0 6,-7"/>
+              <polygon points="-40,0 -6,7 0,0 -6,-7"/>
+              <text x="0" y="-44" text-anchor="middle" class="small">N</text>
+              <text x="0" y="56" text-anchor="middle" class="small">S</text>
+              <text x="50" y="5" text-anchor="middle" class="small">L</text>
+              <text x="-50" y="5" text-anchor="middle" class="small">O</text>
+            </g>
+
+            <text class="t-credit" x="500" y="684" text-anchor="middle">feito pelo Iury · provedor oficial de auxílio a namoradas que amam rosa</text>
+          </svg>
+          <div id="pins" class="pins"></div>
+        </div>
+      </div>
+      <p class="map-hint muted">arrasta pro lado no celular pra ver o mapa inteiro →</p>
+    </section>
+
+    <!-- fotos -->
+    <section id="fotos" class="section gallery">
+      <div class="wrap">
+        <p class="label" data-reveal>a gente</p>
+        <h2 data-reveal>Nossas fotos</h2>
+        <div id="polaroids" class="polaroids" data-reveal-group="60"></div>
+      </div>
+    </section>
+
+    <!-- 19 coisas -->
+    <section id="dezenove" class="section nineteen-section">
+      <div class="wrap">
+        <p class="label" data-reveal>uma pra cada ano</p>
+        <h2 data-reveal>19 coisas que eu amo em você</h2>
+        <ol class="nineteen" data-reveal-group="45">
+          <li data-reveal><span>1</span>O jeito que você ri com o corpo inteiro.</li>
+          <li data-reveal><span>2</span>Sua língua pra fora em toda foto que eu tento tirar sério.</li>
+          <li data-reveal><span>3</span>O coração que você faz com as mãos.</li>
+          <li data-reveal><span>4</span>Como você fica linda sem nem tentar (a foto do jantar prova).</li>
+          <li data-reveal><span>5</span>Sua franja.</li>
+          <li data-reveal><span>6</span>Que você ama rosa e não pede desculpa por isso.</li>
+          <li data-reveal><span>7</span>Teenage dream no repeat. Eu já sei a letra por sua causa.</li>
+          <li data-reveal><span>8</span>Como você me olha quando acha que eu não tô vendo.</li>
+          <li data-reveal><span>9</span>Que você ri das minhas caras mais feias — e me ama mesmo assim.</li>
+          <li data-reveal><span>10</span>Sua coragem de falar o que sente.</li>
+          <li data-reveal><span>11</span>Como você transforma qualquer lugar em "nosso lugar".</li>
+          <li data-reveal><span>12</span>Seu abraço de quem não quer soltar.</li>
+          <li data-reveal><span>13</span>Que você me conhece melhor do que eu mesmo.</li>
+          <li data-reveal><span>14</span>Como você cuida de quem você ama.</li>
+          <li data-reveal><span>15</span>Sua paciência comigo (eu sei que precisa de muita).</li>
+          <li data-reveal><span>16</span>Nossas viagens, até as curtinhas.</li>
+          <li data-reveal><span>17</span>Como você fica feliz com as coisas pequenas.</li>
+          <li data-reveal><span>18</span>Que você me escolhe todos os dias.</li>
+          <li data-reveal><span>19</span>Que, com 19 anos, você já é a pessoa mais incrível que eu conheço.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- promessas + selo -->
+    <section id="promessas" class="section seal-section">
+      <div class="wrap" data-reveal-group="70">
+        <p class="label" data-reveal>minhas promessas</p>
+        <h2 data-reveal>Daqui pra frente</h2>
+        <ul class="promises">
+          <li data-reveal>Não brigar por bobeira. E quando a gente discordar, conversar — sem gritar, sem silêncio.</li>
+          <li data-reveal>Te ouvir de verdade, até quando eu acho que já sei o que você vai dizer.</li>
+          <li data-reveal>Nunca mais esquecer um textinho de aniversário. (Anotado. Alarme criado. Juro.)</li>
+          <li data-reveal>Ficar do seu lado. Hoje, nos seus 19, nos seus 90, e em tudo que vier no meio.</li>
+        </ul>
+
+        <div class="seal-area" data-reveal>
+          <button id="seal-btn" class="btn btn-seal" type="button">
+            <span class="btn-line">pra fechar o mapa, toca aqui</span>
+            <span class="btn-strong">Malfeito feito</span>
+          </button>
+
+          <div class="wax" aria-hidden="true"><span>J ♥ I</span></div>
+          <div class="burst" aria-hidden="true">
+            <i style="--tx:-150px;--ty:-90px;--rot:-30deg">♥</i>
+            <i style="--tx:-90px;--ty:-160px;--rot:20deg">♥</i>
+            <i style="--tx:10px;--ty:-180px;--rot:-15deg">♥</i>
+            <i style="--tx:110px;--ty:-150px;--rot:35deg">♥</i>
+            <i style="--tx:170px;--ty:-70px;--rot:-25deg">♥</i>
+            <i style="--tx:180px;--ty:30px;--rot:15deg">♥</i>
+            <i style="--tx:130px;--ty:120px;--rot:-40deg">♥</i>
+            <i style="--tx:30px;--ty:170px;--rot:25deg">♥</i>
+            <i style="--tx:-80px;--ty:150px;--rot:-20deg">♥</i>
+            <i style="--tx:-160px;--ty:70px;--rot:30deg">♥</i>
+            <i style="--tx:-190px;--ty:-20px;--rot:-10deg">♥</i>
+            <i style="--tx:60px;--ty:-110px;--rot:45deg">♥</i>
+            <i style="--tx:-40px;--ty:-120px;--rot:-45deg">♥</i>
+            <i style="--tx:100px;--ty:60px;--rot:10deg">♥</i>
+          </div>
+
+          <div class="final">
+            <h2>Malfeito feito.</h2>
+            <p>Feliz 19 anos, Jhullya Isabela.<br>Que esse mapa nunca feche pra gente.</p>
+            <p class="final-sign">te amo — Iury</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      feito com ♥ (e um pouquinho de atraso) pelo Iury · 21 · 09 · 2026
+    </footer>
   </div>
 
-  <script src="js/core.js"></script>
-  <script src="js/state.js"></script>
-  <script src="js/audio.js"></script>
-  <script src="js/transitions.js"></script>
-  <script src="js/map/map-texture.js"></script>
-  <script src="js/map/map-engine.js"></script>
-  <script src="js/map/map-render.js"></script>
-  <script src="js/map/map-gestures.js"></script>
-  <script src="js/map/map-missions.js"></script>
-  <script src="js/map/map-secrets.js"></script>
-  <script src="js/fx/particles.js"></script>
-  <script src="js/fx/ink.js"></script>
-  <script src="js/fx/stamp.js"></script>
-  <script src="js/fx/footprint.js"></script>
-  <script src="js/fx/lighting.js"></script>
+  <!-- lightbox das fotos -->
+  <div id="lightbox" class="lb" hidden role="dialog" aria-modal="true" aria-label="Foto">
+    <div class="lb-bg" data-close></div>
+    <figure class="lb-card">
+      <button class="lb-close" type="button" data-close aria-label="Fechar">×</button>
+      <img class="lb-img" alt="">
+      <figcaption>
+        <p class="lb-title"></p>
+        <p class="lb-text"></p>
+        <p class="lb-count"></p>
+      </figcaption>
+      <button class="lb-nav lb-prev" type="button" data-step="-1" aria-label="Foto anterior">‹</button>
+      <button class="lb-nav lb-next" type="button" data-step="1" aria-label="Próxima foto">›</button>
+    </figure>
+  </div>
+
   <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,7 @@
+Se você tiver o MP3 da música, salve ele nesta pasta com EXATAMENTE este nome:
+
+  teenage-dream.mp3
+
+O site detecta o arquivo sozinho e passa a tocar ele (em loop) assim que ela toca em
+"Juro solenemente...", sem precisar do YouTube. Se o arquivo não existir, o site usa
+o clipe oficial do YouTube.

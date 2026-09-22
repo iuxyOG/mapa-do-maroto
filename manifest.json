@@ -1,16 +1,16 @@
 {
-  "name": "Mapa do Maroto - Jhullya Isabela",
-  "short_name": "Mapa Maroto",
-  "description": "Experiência fan-made do Mapa do Maroto: magia, ciência e descobertas para Jhullya Isabela.",
-  "start_url": "./index.html",
+  "name": "Feliz 19 anos, Jhullya ♥",
+  "short_name": "Jhullya 19",
+  "description": "Um Mapa do Maroto cor-de-rosa, feito com amor para os 19 anos da Jhullya Isabela.",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#070b14",
-  "theme_color": "#0a1020",
-  "orientation": "any",
+  "background_color": "#fff3f7",
+  "theme_color": "#ff5c9a",
+  "orientation": "portrait",
   "lang": "pt-BR",
   "icons": [
-    {"src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"},
-    {"src": "assets/icon.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
-    {"src": "assets/icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
   ]
 }
