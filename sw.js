@@ -1,7 +1,7 @@
 // Mapa do Maroto · edição 19 anos — service worker
-const CACHE = 'maroto-19-v1';
+const CACHE = 'maroto-19-v2';
 const CORE = [
-  './', './index.html', './styles.css', './app.js', './manifest.json', './favicon.svg',
+  './', './index.html', './styles.css?v=19', './app.js?v=19', './manifest.json?v=19', './favicon.svg?v=19',
   './assets/icon-192.png', './assets/icon-512.png',
   './fotos/thumb-01.jpg', './fotos/thumb-02.jpg', './fotos/thumb-03.jpg', './fotos/thumb-04.jpg',
   './fotos/thumb-05.jpg', './fotos/thumb-06.jpg', './fotos/thumb-07.jpg',
